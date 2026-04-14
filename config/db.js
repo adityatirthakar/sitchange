@@ -5,12 +5,7 @@ let pool;
 
 if (process.env.DATABASE_URL) {
   // Use connection URI provided by cloud hosts like Aiven
-  pool = mysql.createPool({
-    uri: process.env.DATABASE_URL,
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
-  });
+  pool = mysql.createPool(process.env.DATABASE_URL);
 } else {
   // Local fallback
   pool = mysql.createPool({
