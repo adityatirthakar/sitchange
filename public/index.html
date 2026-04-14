@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitchange - Exchange tickets and seats with other travelers. List your train, bus, flight, movie, concert, or hotel tickets.">
+  <title>Sitchange — Ticket Exchange Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Sit<span>change</span></a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="add-listing.html">Add Listing</a></li>
+        <li><a href="my-listings.html">My Listings</a></li>
+        <li id="authNavItem"><a href="auth.html" class="nav-btn">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Exchange Tickets.<br>Sit Together.</h1>
+      <p>List your tickets, find someone to swap with, and chat in real-time to coordinate your seat exchange.</p>
+      <a href="add-listing.html" class="hero-cta" id="heroCta">
+        ✨ List Your Ticket
+      </a>
+    </section>
+
+    <!-- Listings -->
+    <section class="listings-section">
+      <div class="section-header">
+        <h2>Available Listings</h2>
+        <div class="line"></div>
+      </div>
+      <div class="cards-grid" id="listingsGrid">
+        <div class="empty-state" id="listingsEmpty">
+          <div class="icon">🎫</div>
+          <h3>No listings yet</h3>
+          <p>Be the first to list a ticket for exchange!</p>
+          <a href="add-listing.html" class="btn btn-primary">Create Listing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Links -->
+    <section class="booking-links">
+      <div class="section-header">
+        <h2>Quick Booking Links</h2>
+        <div class="line"></div>
+      </div>
+      <div class="links-grid">
+        <a href="https://www.irctc.co.in" target="_blank" rel="noopener" class="link-card link-card-irctc" id="linkIrctc">
+          <div class="link-icon">🚆</div>
+          <div class="link-info">
+            <h3>IRCTC</h3>
+            <p>Book train tickets</p>
+          </div>
+        </a>
+        <a href="https://www.redbus.in" target="_blank" rel="noopener" class="link-card link-card-redbus" id="linkRedbus">
+          <div class="link-icon">🚌</div>
+          <div class="link-info">
+            <h3>RedBus</h3>
+            <p>Book bus tickets</p>
+          </div>
+        </a>
+        <a href="https://www.makemytrip.com" target="_blank" rel="noopener" class="link-card link-card-makemytrip" id="linkMakemytrip">
+          <div class="link-icon">✈️</div>
+          <div class="link-info">
+            <h3>MakeMyTrip</h3>
+            <p>Flights, hotels & more</p>
+          </div>
+        </a>
+        <a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="link-card link-card-bookmyshow" id="linkBookmyshow">
+          <div class="link-icon">🎬</div>
+          <div class="link-info">
+            <h3>BookMyShow</h3>
+            <p>Movies & events</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

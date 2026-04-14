@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat with sellers on Sitchange.">
+  <title>Sitchange — Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Sit<span>change</span></a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-listing.html">Add Listing</a></li>
+        <li><a href="my-listings.html">My Listings</a></li>
+        <li id="authNavItem"><a href="auth.html" class="nav-btn">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="chat-container">
+
+      <div class="chat-header" id="chatHeader">
+        <h2 id="chatTitle">Loading chat...</h2>
+        <div class="chat-meta" id="chatMeta"></div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+        <button class="btn btn-primary" id="sendBtn">Send</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>

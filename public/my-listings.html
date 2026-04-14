@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your ticket listings on Sitchange.">
+  <title>Sitchange — My Listings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Sit<span>change</span></a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-listing.html">Add Listing</a></li>
+        <li><a href="my-listings.html" class="active">My Listings</a></li>
+        <li id="authNavItem"><a href="auth.html" class="nav-btn">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="section-header" style="margin-top:2rem">
+      <h2>My Listings</h2>
+      <div class="line"></div>
+    </div>
+
+    <div id="myListingsContainer">
+      <div class="empty-state" id="emptyState">
+        <div class="icon">📋</div>
+        <h3>You haven't listed anything yet</h3>
+        <p>Start by creating a new ticket listing.</p>
+        <a href="add-listing.html" class="btn btn-primary">Create Listing</a>
+      </div>
+    </div>
+
+    <table class="dashboard-table" id="listingsTable" style="display:none">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Route</th>
+          <th>Date</th>
+          <th>Seat</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="listingsTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/myListings.js"></script>
+</body>
+</html>
